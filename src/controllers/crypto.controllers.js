@@ -122,7 +122,7 @@ const deviation = asynchandler(async (req,res) => {
         coinName: coin
     }).sort(
         {fetchedAt: -1}
-    ).limit(10)
+    ).limit(100)
 
     // calculation of the standard deviation
     if (entries.length > 0) {
